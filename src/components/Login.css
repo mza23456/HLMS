@@ -5,22 +5,22 @@
   font-family: "IBM Plex Sans Thai", cursive;
 }
 
-header{
-    /* background: linear-gradient(180deg, rgb(6, 0, 126) 0%, #82b6ff 100%); */
-    background: url('../img/blur-bank.jpg');
-    background-position: center;
-    background-size: cover;
-    height: 100%;
+header {
+  /* background: linear-gradient(180deg, rgb(6, 0, 126) 0%, #82b6ff 100%); */
+  background: url("../img/blur-bank.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100%;
 }
-#header{
-    margin-top: 15px;
-    padding: 25px;
-    font-size: 25px;
+#header {
+  margin-top: 15px;
+  padding: 25px;
+  font-size: 25px;
 }
-#icon{
-    display: flex;
-    height: 150px;
-    justify-content: center;
+#icon {
+  display: flex;
+  height: 150px;
+  justify-content: center;
 }
 #container {
   display: flex;
@@ -28,6 +28,11 @@ header{
   justify-content: center;
   align-items: center;
   height: 100vh;
+}
+@media screen and (max-width: 430px) {
+  #container {
+
+  }
 }
 #form-signin {
   width: 650px;
@@ -38,20 +43,20 @@ header{
   border-radius: 30px;
 }
 
-#textbox-user{ 
-    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.25); 
-    border-radius: 5px;
-    margin-left: 4rem;
-    margin-right: 4rem;
-    margin-top: 1rem;
+#textbox-user {
+  box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  margin-top: 1rem;
 }
 
-#textbox-password{
-    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.25); 
-    border-radius: 5px;
-    margin-left: 4rem;
-    margin-right: 4rem;
-    margin-top: 1rem;
+#textbox-password {
+  box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  margin-top: 1rem;
 }
 
 #login-btn {
@@ -65,10 +70,10 @@ header{
   border: none;
   box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.25);
 }
-#forget-pass-btn{
+#forget-pass-btn {
   margin-top: 30px;
   /* margin-right: 445px; */
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 400;
   word-wrap: break-word;
   margin-left: auto;
@@ -76,7 +81,7 @@ header{
   color: cornflowerblue;
 }
 
-#remember-btn{
+#remember-btn {
   margin-top: 30px;
   margin-left: 65px;
   /* margin-right: 410px; */

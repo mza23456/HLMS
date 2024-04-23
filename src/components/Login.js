@@ -49,7 +49,7 @@ function Login() {
         console.log(result);
         if (result.status === "ok") {
           MySwal.fire({
-            html: <i>{'เข้าสู่ระบบสำเร็จ'}</i>,
+            html: 'เข้าสู่ระบบสำเร็จ',
             icon: "success",
           }).then((value) => {
             localStorage.setItem("token", result.accessToken);
@@ -57,7 +57,7 @@ function Login() {
           });
         } else {
           MySwal.fire({
-            html: <i>{'บัญชีผู้ใช้หรือรหัสผ่านไม่ถูกต้อง'}</i>,
+            html: 'บัญชีผู้ใช้หรือรหัสผ่านไม่ถูกต้อง',
             icon: "error",
           });
         }
@@ -126,7 +126,7 @@ function Login() {
               </label>
             </div>
 
-            <div id="forget-pass-btn">ลืมรหัสผ่าน?</div>
+            <div id="forget-pass-btn">ลืมรหัสผ่าน</div>
 
           </div>
           <button id="login-btn" type="submit">
