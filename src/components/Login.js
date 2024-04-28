@@ -43,7 +43,7 @@ function Login() {
       redirect: "follow",
     };
 
-    fetch("https://www.melivecode.com/api/login", requestOptions)
+    fetch("http://localhost:5000/", requestOptions)
       .then((response) => response.json())
       .then((result) => {
         console.log(result);
@@ -51,6 +51,10 @@ function Login() {
           MySwal.fire({
             html: 'เข้าสู่ระบบสำเร็จ',
             icon: "success",
+            timer: 1500,
+            timerProgressBar: true,
+            // showCancelButton: false, // There won't be any cancel button
+            // showConfirmButton: false // There won't be any confirm button
           }).then((value) => {
             localStorage.setItem("token", result.accessToken);
             navigate("/dashboard");
@@ -59,6 +63,8 @@ function Login() {
           MySwal.fire({
             html: 'บัญชีผู้ใช้หรือรหัสผ่านไม่ถูกต้อง',
             icon: "error",
+            timer: 1500,
+            timerProgressBar: true,
           });
         }
       })

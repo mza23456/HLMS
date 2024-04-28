@@ -2,7 +2,8 @@ import { Routes, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Login from "./components/Login";
 import Dashboard from "./components/Dashboard";
-import HomeloanCal from "./components/homeloanCal.component"
+import DTICal from "./components/homeloanCal.component"
+
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
         <Route path="/" element={<Login />} />
         <Route path="login" element={<Login />} />
         <Route path="dashboard" element={<Dashboard />} />
-        <Route path="homeloancal" element={<HomeloanCal />} />
+        <Route path="dashboard/homeloancal" element={<DTICal />} />
       </Routes>
     </div>
   );

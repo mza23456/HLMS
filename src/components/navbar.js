@@ -11,7 +11,7 @@ function Navbar() {
 
   return (
     <nav style={navbarStyle}>
-      <h3 className='text-center'>ระบบบริหารจัดการข้อมูลการพิจารณาสินเชื่อบ้าน</h3>
+      <h3 className='text-center fw-normal'>ระบบบริหารจัดการข้อมูลการพิจารณาสินเชื่อบ้าน</h3>
     </nav>
   );
 }

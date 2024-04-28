@@ -24,14 +24,13 @@ header {
 }
 #container {
   display: flex;
-  margin-right: 30px;
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
 @media screen and (max-width: 430px) {
   #container {
-
+    
   }
 }
 #form-signin {
@@ -70,6 +69,7 @@ header {
   border: none;
   box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.25);
 }
+
 #forget-pass-btn {
   margin-top: 30px;
   /* margin-right: 445px; */
@@ -93,4 +93,13 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
+  border: 0;
+  border-radius: .25em;
+  background: initial;
+  background-color: #F48C25;
+  color: #fff;
+  font-size: 1em;
 }
